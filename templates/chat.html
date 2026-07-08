@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Deep Space Station 9 - AI Assistant</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="app">
+  <header class="header">
+    <h1>📡 DEEP SPACE STATION 9</h1>
+    <p class="subtitle">Operations AI Assistant</p>
+  </header>
+
+  <div class="layout">
+    <main class="chat-panel">
+      <div id="chatArea" class="chat-area">
+        <div class="message bot-message">
+          <div class="bubble">🤖 Greetings, crew member. Ask me anything about station operations, emergencies, navigation, or alien contact protocols.</div>
+        </div>
+      </div>
+
+      <div class="input-row">
+        <input id="questionInput" type="text" placeholder="Ask a question..." autocomplete="off">
+        <button id="sendBtn" class="btn btn-primary">Send</button>
+      </div>
+      <button id="clearChatBtn" class="btn-small">Clear Chat</button>
+    </main>
+
+    <aside class="faq-sidebar">
+      <h2>📚 FAQ Reference</h2>
+      <input id="faqSearch" type="text" placeholder="Search FAQs..." class="faq-search">
+      <div id="faqList" class="faq-list"></div>
+    </aside>
+  </div>
+</div>
+
+<script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+</html>

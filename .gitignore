@@ -1,0 +1,7 @@
+venv/
+__pycache__/
+*.pyc
+.env
+*.h5
+generated_music/*.mid
+captured_frames/*.jpg
